@@ -6,6 +6,7 @@ const FamilyBudget = () => {
   const [item, setItem] = useState('')
   const [price, setPrice] = useState('')
   const [text, setText] = useState('')
+  const [varningText, setVarningText] = useState('')
   const [allItems, setAllItems] = useState([])
   const [total, setTotal] = useState(0)
 
@@ -21,7 +22,7 @@ const FamilyBudget = () => {
     setTotal(total + price)
     if (total + price > 50) {
       const over = (total + price - 50)
-      setText(`Your daily budget was exceeded by $${over}`)
+      setVarningText(`Your daily budget was exceeded by $${over}`)
     }
   }
 
@@ -46,6 +47,7 @@ const FamilyBudget = () => {
         item={item}
         price={price}
         text={text}
+        varningText={varningText}
         total={total}
         handleItem={handleItem}
         handlePrice={handlePrice} 

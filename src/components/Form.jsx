@@ -3,7 +3,7 @@ import Result from "./Result"
 import { CalendarIcon } from '@chakra-ui/icons'
 
 const Form = ({ 
-  item, price, total, text, handleItem, 
+  item, price, total, text, varningText, handleItem, 
   handlePrice, submitForm, allItems 
   }) => {
   
@@ -53,6 +53,7 @@ const Form = ({
         allItems={allItems}
         total={total} 
         text={text}
+        varningText={varningText}
       />
     </Box>
   )

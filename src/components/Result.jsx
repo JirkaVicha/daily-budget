@@ -1,6 +1,6 @@
-import { Heading, Text, Box, Flex, SimpleGrid, Divider, Alert, AlertIcon } from '@chakra-ui/react'
+import { Heading, Text, Box, SimpleGrid, Divider, Alert, AlertIcon } from '@chakra-ui/react'
 
-const Result = ({ total, text, allItems }) => {
+const Result = ({ total, text, varningText, allItems }) => {
   
   const currDate = new Date()
   const options = {
@@ -19,7 +19,7 @@ const Result = ({ total, text, allItems }) => {
             mb={2} ml={2} 
             maxW='415px' 
             borderRadius={5}>
-            <AlertIcon />{text}
+            <AlertIcon />{varningText}
           </Alert>
         }
       </Box>
