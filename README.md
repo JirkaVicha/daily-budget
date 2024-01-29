@@ -1,8 +1,5 @@
-# React + Vite
+Your Daily Budget React App.
+Simple app to calculate daily budget. App is created with Vite React, used some hooks, such as useState, form to input items and price. The app calculates sum of the daily expenses and when expenses exceed the sum of $50, the varning alert appears. 
+The values are not saved into DB or JSON. It is created just for learning purpose.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Life preview: https://daily-vydaje.netlify.app/
